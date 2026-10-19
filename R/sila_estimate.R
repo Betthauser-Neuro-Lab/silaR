@@ -55,7 +55,8 @@
 #' sila_estimate(illa_res$tout, df)
 #' sila_estimate(illa_res$tout, df, align_event = "first")
 sila_estimate <- function(
-    tsila, df, align_event = "last", extrap_years = 3, truncate_aget0 = TRUE) {
+  tsila, df, align_event = "last", extrap_years = 3, truncate_aget0 = TRUE
+) {
   # Create extrapolated model
   md1 <- stats::lm(
     adtime ~ val,
